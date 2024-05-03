@@ -1,0 +1,773 @@
+body {
+  font-family: "Poppins", sans-serif;
+  main {
+    width: 100%;
+    > .top-side {
+      width: 100%;
+      height: 50px;
+      background-color: #fdbd3b;
+      > .row {
+        justify-content: space-between;
+        padding: 0 100px;
+        > * {
+          min-width: 80px;
+          height: 100%;
+        }
+        > ul {
+          > li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            > a {
+              color: #442900;
+              display: flex;
+              margin: 0 5px;
+              transition: 0.4s;
+              > i {
+                font-size: 14px;
+              }
+              &:hover {
+                color: white;
+              }
+            }
+          }
+        }
+        > div {
+          align-items: center;
+          > p {
+            color: #442900;
+          }
+        }
+      }
+    }
+    .top-head {
+      width: 100%;
+      height: 70px;
+      background-color: white;
+      > .row {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 100px;
+        > * {
+          height: 100%;
+        }
+        > figure {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > img {
+            width: 100%;
+            height: 59%;
+            object-fit: cover;
+          }
+        }
+        > .row {
+          > ul {
+            > li {
+              > a {
+                color: black;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding: 0 15px;
+                position: relative;
+                &:hover&::after {
+                  width: 100%;
+                }
+                &::after {
+                  content: "";
+                  transition: 0.4s;
+                  display: flex;
+                  position: absolute;
+                  width: 0px;
+                  height: 2px;
+                  background-color: #dfa42e;
+                  bottom: 10px;
+                  left: 0;
+                }
+              }
+            }
+            > div {
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+    > .top-head-body {
+      width: 100%;
+      height: 100vh;
+      background-image: url("img/img0345654.webp");
+      background-size: cover;
+      > .row {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        > figure {
+          width: 150px;
+          height: 150px;
+          z-index: 9999;
+          bottom: 20px;
+          right: 20px;
+          position: fixed;
+          &:hover {
+            > span {
+              border-radius: 50%;
+              left: -21px;
+              &:first-of-type {
+                top: 20px;
+              }
+              &:last-of-type {
+                top: 128px;
+              }
+            }
+          }
+          > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            border-radius: 50%;
+          }
+          > span {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            background-color: white;
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            > a {
+              color: #dfa42e;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+        .top-head-body-text {
+          width: 50%;
+          height: 100%;
+          padding-left: 120px;
+          > div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            > div {
+              > * {
+                width: 100%;
+              }
+              > h1 {
+                color: #333333;
+                font-size: 70px;
+                margin-bottom: 30px;
+              }
+              > p {
+                color: #616161;
+                font-size: 20px;
+                margin-bottom: 30px;
+              }
+              a {
+                padding: 10px 20px;
+                background-color: #fdbd3b;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .Maecenas {
+      width: 100%;
+      height: 100vh;
+      > .row {
+        width: 100%;
+        height: 100%;
+        padding: 100px 70px;
+        justify-content: center;
+        > .Maecena-box {
+          width: 30%;
+          height: 50%;
+          margin: 10px;
+          .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            > figure {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              > img {
+                width: 100%;
+                height: 100px;
+                object-fit: contain;
+              }
+            }
+            > .Maecena-title {
+              > h3 {
+                width: 100%;
+                display: flex;
+                margin-bottom: 30px;
+                font-size: 22px;
+                font-weight: bold;
+                justify-content: center;
+                color: #333333;
+                align-items: center;
+                margin-bottom: 10px;
+              }
+              > P {
+                text-align: center;
+                color: #616161;
+                font-size: 20px;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .Accessories {
+      width: 100%;
+      height: 120vh;
+      > .row {
+        width: 100%;
+        height: 100%;
+
+        > .Accessories-bg {
+          width: 100%;
+          height: 70vh;
+          background-image: url("img/img.webp");
+          background-position: center;
+          background-size: cover;
+        }
+        > .Accessories-imgs {
+          width: 100%;
+          height: 50vh;
+          > .row {
+            width: 100%;
+            > .card {
+              width: 33.333%;
+              height: 100%;
+              position: relative;
+              overflow: hidden;
+              transition: 0.8s;
+              &:nth-of-type(1) {
+                background-color: #8accdc;
+              }
+              &:nth-of-type(2) {
+                background-color: #ffb2b8;
+              }
+              &:nth-of-type(3) {
+                background-color: #ffc700;
+              }
+              &:hover::after {
+                background-color: rgba(240, 248, 255, 0);
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                background-color: rgba(240, 248, 255, 0.473);
+              }
+              &:hover {
+                > a {
+                  > figure {
+                    > img {
+                      left: 0;
+                    }
+                  }
+                }
+                > a:nth-of-type(2) {
+                  transform: translate(10px, 200px);
+                }
+                > a:nth-of-type(3) {
+                  transform: translate(10px, 250px);
+                  opacity: 1;
+                }
+              }
+              > a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                transition: 0.4s;
+                &:nth-of-type(2) {
+                  color: white;
+                  font-size: 30px;
+                  transform: translate(10px, 250px);
+                  font-weight: bold;
+                }
+                &:nth-of-type(3) {
+                  color: white;
+                  font-size: 18px;
+                  transform: translate(10px, 270px);
+                  opacity: 0;
+                }
+                > * {
+                  width: 100%;
+                  height: 100%;
+                }
+                > figure {
+                  overflow: hidden;
+                  > img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: -20px;
+                    transition: 0.4s;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > .featured-products {
+      width: 100%;
+      > .row {
+        width: 100%;
+        padding: 100px 70px;
+        > h3 {
+          font-size: 40px;
+          color: #333333;
+          text-align: center;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        .row {
+          width: 100%;
+          height: 100%;
+          > .card-product {
+            width: 286px;
+            height: 550px;
+            overflow: hidden;
+            position: relative;
+            transition: .4s;
+            margin: 7px;
+            &:hover {
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+              > figure::after {
+                bottom: 0;
+              }
+              > i {
+                right: 10px;
+              }
+            }
+            > i {
+              position: absolute;
+              background: white;
+              display: flex;
+              width: 50px;
+              height: 50px;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              color: #ffae00;
+              z-index: 999;
+              right: -20%;
+              &:first-of-type {
+                transition: 0.4s;
+                top: 20px;
+              }
+              &:last-of-type {
+                top: 80px;
+                transition: 0.6s;
+              }
+            }
+            > figure {
+              width: 100%;
+              height: 60%;
+              overflow: hidden;
+              position: relative;
+              &::after {
+                content: "ADD TO CART";
+                transition: 0.4s;
+                position: absolute;
+                width: 100%;
+                height: 50px;
+                display: flex;
+                bottom: -50px;
+                left: 0;
+                background-color: #fdbd3b;
+                color: white;
+                font-weight: bold;
+                align-items: center;
+                justify-content: center;
+              }
+              > img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+            }
+            > .card-product-box {
+              position: relative;
+              padding-top: 15px;
+              > * {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              > span {
+                font-size: 15px;
+                color: #616161;
+                margin-bottom: 10px;
+              }
+              > span {
+                &:last-of-type {
+                  color: #62bf5b;
+                  font-size: 22px;
+                }
+              }
+              > p {
+                color: #333333;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 30px;
+              }
+              > .start-top {
+                display: flex;
+                margin-top: 25px;
+                > i {
+                  color: #f9ca63;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > .Suspendisse {
+      width: 100%;
+      background-image: url("img/img5678765.webp");
+      background-size: cover;
+      position: relative;
+      &::after {
+        background-color: #f9c9638f;
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      > .row {
+        width: 100%;
+        padding: 100px 70px;
+        > .libero {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          > .libero-card {
+            display: flex;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            > div {
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              > * {
+                color: #442900;
+                position: relative;
+                z-index: 1;
+              }
+              > i {
+                font-size: 70px;
+              }
+              > p {
+                font-size: 16px;
+                text-align: center;
+                line-height: 36px;
+              }
+              > figure {
+                margin-top: 50px;
+                > img {
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > .latest {
+      width: 100%;
+      > .row {
+        width: 100%;
+        height: 100%;
+        padding: 100px 70px;
+        > h3 {
+          width: 100%;
+          display: flex;
+          font-size: 40px;
+          font-weight: bold;
+          justify-content: center;
+          color: #333333;
+          align-items: center;
+          margin-bottom: 40px;
+        }
+        > div {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          > .card-new:first-of-type {
+            margin-left: 0;
+          }
+          > .card-new {
+            width: 390px;
+            height: 390px;
+            margin-left: 16px;
+            position: relative;
+            &:hover > figure::after {
+              background-color: rgba(0, 0, 0, 0.452);
+            }
+            &:hover > figure > a {
+              opacity: 1;
+            }
+            > figure {
+              width: 100%;
+              height: 60%;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                transition: 0.4s;
+              }
+              > a {
+                color: white;
+                padding: 15px 20px;
+                border-radius: 10px;
+                font-size: 15px;
+                border: 1px solid white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                opacity: 0;
+                transition: 0.6s;
+              }
+              > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+            }
+            > div {
+              height: 40%;
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              position: relative;
+              > img {
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                object-fit: cover;
+                top: -23%;
+                left: 50%;
+                transform: translateX(-50%);
+                border: 5px solid white;
+                border-radius: 50%;
+              }
+              > p {
+                font-size: 20px;
+                color: #000;
+                text-align: center;
+                display: flex;
+                padding: 40px 20px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                &:hover {
+                  color: #fdbd3b;
+                }
+              }
+              width: 100%;
+              > div {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: #acaec1;
+                font-size: 16px;
+                background-color: #a8a8a833;
+                padding: 0 20px;
+                > div {
+                  > i {
+                    padding-right: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > .footer {
+      background-color: #56423e;
+      width: 100%;
+      height: 65vh;
+      > .row {
+        width: 100%;
+        padding: 50px 150px;
+        position: relative;
+        > .top {
+          color: white;
+          padding: 10px;
+          margin-top: 30px;
+          position: absolute;
+          left: 10px;
+          bottom: 10px;
+          font-size: 30px;
+        }
+        > a {
+          position: absolute;
+          bottom: 0;
+          right: 10px;
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+        }
+        > figure {
+          width: 100px;
+          height: 100px;
+          background-attachment: fixed;
+          > img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        > * {
+          width: 25%;
+          height: 100%;
+        }
+        > div {
+          > * {
+            color: white;
+          }
+          > p {
+            color: #919191;
+            width: 100%;
+            padding: 30px 10px;
+          }
+          > div {
+            position: relative;
+            > input {
+              border: none;
+              outline: none;
+              border: 1px solid #a1a1a1c2;
+              width: 100%;
+              position: relative;
+              padding: 15px;
+              display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+            }
+            > a {
+              position: absolute;
+              padding: 10px;
+              background-color: #fdbd3b;
+              border-radius: 33%;
+              color: white;
+              width: 50px;
+              height: 33px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              top: 6px;
+              left: 75%;
+              transition: 0.4s;
+            }
+            > form {
+              > lable {
+                color: white;
+              }
+            }
+            > div {
+              margin: 20px 10px;
+              display: flex;
+              > div {
+                padding: 15px;
+                border: 1px solid #757370;
+                padding: 20px;
+                border: 1px solid #757370;
+                width: 20px;
+                height: 20px;
+
+                > i {
+                  color: #fdbd3b;
+                  font-size: 20px;
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+              }
+              > p,
+              > a {
+                padding-left: 20px;
+                color: white;
+              }
+            }
+          }
+          > ul {
+            width: 100%;
+            > li {
+              margin: 10px;
+              > a {
+                color: #ffffff;
+                transition: 0.4s;
+                &:hover {
+                  color: #f9ca63;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .dev {
+    width: 100%;
+    height: 40px;
+    background-color: #616161;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > p {
+      color: white;
+    }
+  }
+}
